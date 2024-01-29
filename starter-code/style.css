@@ -1,24 +1,87 @@
 :root {
   --primary-color: #24053E;
-    --secondary-color: #44FFA1;
-    --darkpurple: #584D62;
-    --gray: #FCF8FF;
-    --white: #FFFFFF;
+  --secondary-color: #44FFA1;
+  --darkpurple: #584D62;
+  --gray: #FCF8FF;
+  --white: #FFFFFF;
 }
 
-/* *{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-} */
+}
+
 .container {
   max-width: 1440px;
   height: auto;
 }
 
-header {
-  max-height: 730px;
-  height: 730px;
+.header {
+  max-height: 1200px;
+  height: 1200px;
   background: var(--primary-color);
-  clip-path: ellipse(130% 100% at 50% -50%)
+  clip-path: ellipse(130% 100% at 50% -50%);
+  display: flex;
+  flex-direction: column;
+
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 56px 165px;
+}
+
+.nav img {
+  width: 95.762px;
+  height: 24.608px;
+}
+
+.nav a {
+  color: var(--white);
+  cursor: pointer;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.nav a:hover {
+  color: var(--secondary-color)
+}
+
+.title {
+  position: absolute;
+  top: 146px;
+  left: 403px;
+
+}
+
+h1 {
+  width: 635px;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80px;
+  text-align: center;
+  color: var(--white);
+}
+
+.special {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+button {
+  padding: 13px 32px;
+  outline: none;
+  border: none;
+  margin: 37px 237px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-color-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
