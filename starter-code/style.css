@@ -1,0 +1,24 @@
+:root {
+  --primary-color: #24053E;
+    --secondary-color: #44FFA1;
+    --darkpurple: #584D62;
+    --gray: #FCF8FF;
+    --white: #FFFFFF;
+}
+
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+.container {
+  max-width: 1440px;
+  height: auto;
+}
+
+header {
+  max-height: 730px;
+  height: 730px;
+  background: var(--primary-color);
+  clip-path: ellipse(130% 100% at 50% -50%)
+}
